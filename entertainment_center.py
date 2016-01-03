@@ -1,4 +1,4 @@
-import fresh_tomatoes
+﻿import fresh_tomatoes
 import media
 
 toy_story = media.Movie(
@@ -11,7 +11,7 @@ toy_story = media.Movie(
     "John Lasseter",
     "John Lasseter (original story by), Pete Docter (original story by), Andrew Stanton (original story by), Joe Ranft (original story by), Joss Whedon (screenplay), Andrew Stanton (screenplay), Joel Cohen (screenplay), Alec Sokolow (screenplay)",
     "Tom Hanks, Tim Allen, Don Rickles, Jim Varney",
-    "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy"s room.",
+    "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.",
     "English",
     "USA",
     "Nominated for 3 Oscars. Another 22 wins & 16 nominations.",
@@ -52,5 +52,22 @@ minions = media.Movie(
     "http://ia.media-imdb.com/images/M/MV5BMTg2MTMyMzU0M15BMl5BanBnXkFtZTgwOTU3ODk4NTE@._V1_SX300.jpg",
     "https://www.youtube.com/watch?v=dVDk7PXNXB8"    )
 
-movies = [toy_story, terminator2, minions]
+predator = media.Movie(
+    "Predator",
+    "1987",
+    "R",
+    "12 Jun 1987",
+    "107 min",
+    "Action, Horror, Sci-Fi",
+    "John McTiernan",
+    "Jim Thomas, John Thomas",
+    "Arnold Schwarzenegger, Carl Weathers, Elpidia Carrillo, Bill Duke",
+    "A team of commandos on a mission in a Central American jungle find themselves hunted by an extra-terrestrial warrior.",
+    "English, Spanish",
+    "USA",
+    "Nominated for 1 Oscar. Another 3 wins & 4 nominations.",
+    "http://ia.media-imdb.com/images/M/MV5BMTI2ODMzODA0Ml5BMl5BanBnXkFtZTYwNTM3NzY5._V1._CR17,27,308,447_SY132_CR1,0,89,132_AL_.jpg_V1_SX300.jpg",
+    "https://www.youtube.com/watch?v=Y1txEAywdiw")
+
+movies = [toy_story, terminator2, minions, predator]
 fresh_tomatoes.open_movies_page(movies)
