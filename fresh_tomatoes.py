@@ -16,9 +16,13 @@ main_page_content = parse_html('main')
 # load a single movie entry html template
 movie_tile_content = parse_html('tile')
 
+# load a single modal movie entry html template
+info_modal_content = parse_html('infoModal')
+
 def create_movie_tiles_content(movies):
+    '''Creates a tile to be displayed for each movie on the webpage.'''
     # The HTML content for this section of the page
-    content = ''
+    tileContent = ''
     for movie in movies:
         # Extract the youtube ID from the url
         youtube_id_match = re.search(
@@ -29,21 +33,47 @@ def create_movie_tiles_content(movies):
                               else None)
 
         # Append the tile for the movie with its content filled in
-        content += movie_tile_content.format(
+        tileContent += movie_tile_content.format(
             movie_title=movie.title,
             poster_image_url=movie.poster_image_url,
             trailer_youtube_id=trailer_youtube_id
         )
-    return content
+    return tileContent
 
+def create_info_modals_content(movies):
+    '''Creates a modal for the pertinant movie info for each movie.'''
+    # The HTML content for this section of the page
+    modalContent = ''
+    for movie in movies:
+        # Append the modal for the movie with its content filled in
+        modalContent += info_modal_content.format(
+            movie_year=movie.year,
+            movie_rating=movie.rating,
+            movie_released=movie.released,
+            movie_runtime=movie.duration,
+            movie_genre=movie.genre,
+            movie_director=movie.director,
+            movie_writer=movie.writer,
+            movie_actors=movie.actors,
+            movie_plot=movie.plot,
+            movie_language=movie.language,
+            movie_country=movie.country,
+            movie_awards=movie.awards
+        )
+    return modalContent
 
 def open_movies_page(movies):
+    '''Function that creates a movies file and appends rendered HTML to it.'''
     # Create or overwrite the output file
     output_file = open('fresh_tomatoes.html', 'w')
 
     # Replace the movie tiles placeholder generated content
     rendered_content = main_page_content.format(
         movie_tiles=create_movie_tiles_content(movies))
+
+    # Replace the placeholder genrated content
+    rendered_content = rendered_content.format(
+        movie_modals=create_info_modals_content(movies))
 
     # Output the file
     output_file.write(main_page_head + rendered_content)

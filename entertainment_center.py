@@ -1,5 +1,8 @@
-﻿import fresh_tomatoes
+﻿# imports of other python files
+import fresh_tomatoes
 import media
+
+# varialbes for each movie in my media library
 
 toy_story = media.Movie(
     "Toy Story",
@@ -69,5 +72,6 @@ predator = media.Movie(
     "http://ia.media-imdb.com/images/M/MV5BMTI2ODMzODA0Ml5BMl5BanBnXkFtZTYwNTM3NzY5._V1._CR17,27,308,447_SY132_CR1,0,89,132_AL_.jpg_V1_SX300.jpg",
     "https://www.youtube.com/watch?v=Y1txEAywdiw")
 
+# call each movie in my entire catalog and then build the website
 movies = [toy_story, terminator2, minions, predator]
 fresh_tomatoes.open_movies_page(movies)

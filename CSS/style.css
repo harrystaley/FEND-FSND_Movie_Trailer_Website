@@ -7,6 +7,18 @@ body {
     padding-top: 80px;
 }
 
+.flex-box {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: default;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
 #trailer,
 .modal-dialog {
     margin-top: 200px;
