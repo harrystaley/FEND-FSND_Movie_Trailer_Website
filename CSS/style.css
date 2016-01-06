@@ -1,22 +1,5 @@
-/*
-Moved CSS from entertainment_center.py
-to its own file to follow css best practices
-*/
-
 body {
     padding-top: 80px;
-}
-
-.flex-box {
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: default;
-    flex-wrap: wrap;
-    padding: 10px;
-}
-
-ul {
-    list-style-type: none;
 }
 
 #trailer,
@@ -38,8 +21,9 @@ ul {
     height: 100%;
 }
 
-.modal {
-    left: 33%;
+.poster-image {
+    width: 300px;
+    height: 400px;
 }
 
 .movie-tile {

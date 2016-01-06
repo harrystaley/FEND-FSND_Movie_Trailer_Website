@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- normalize CSS pixels with device pixels for scalability -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fresh Tomatoes!</title>
+
+    <!-- bootstrap framework stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+    <!-- link to the custom stylesheet -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- load javascript files -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="JS/scripts.js"></script>
+</head><body>
+    <!-- Trailer Video Modal -->
+    <div class="modal" id="trailer">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+        <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24/">
+          </a>
+          <div class="scale-media" id="trailer-video-container">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- This is a variable for python to fill in different modals for each movie -->
+    
+    <!-- Movie Info Modal -->
+    <div class="modal container" id="movieInfo_Toy Story">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="movieInfo" id="movie_info_title">Toy Story</h4>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-md-4">
+                        <img class="img-responsive poster-image" src="http://ia.media-imdb.com/images/M/MV5BMTgwMjI4MzU5N15BMl5BanBnXkFtZTcwMTMyNTk3OA@@._V1_SX300.jpg" alt="Toy Story poster">
+                    </div>
+                    <div class="col-md-4">
+                        <p>
+                        <strong>Year: </strong>1995
+                        <strong>Rating: </strong>G
+                        <strong>Released: </strong>22 Nov 1995
+                        <strong>Runtime: </strong>81 min
+                        <strong>Genre: </strong>Animation, Adventure, Comedy
+                        <strong>Director: </strong>John Lasseter
+                        <strong>Writer: </strong>John Lasseter (original story by), Pete Docter (original story by), Andrew Stanton (original story by), Joe Ranft (original story by), Joss Whedon (screenplay), Andrew Stanton (screenplay), Joel Cohen (screenplay), Alec Sokolow (screenplay)
+                        <strong>Cast: </strong>Tom Hanks, Tim Allen, Don Rickles, Jim Varney
+                        <strong>Plot: </strong>A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.
+                        <strong>Language: </strong>English
+                        <strong>Country: </strong>USA
+                        <strong>Awards: </strong>Nominated for 3 Oscars. Another 22 wins & 16 nominations.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Movie Info Modal -->
+    <div class="modal container" id="movieInfo_Terminator 2: Judgment Day">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="movieInfo" id="movie_info_title">Terminator 2: Judgment Day</h4>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-md-4">
+                        <img class="img-responsive poster-image" src="http://ia.media-imdb.com/images/M/MV5BMTg5NzUwMDU5NF5BMl5BanBnXkFtZTcwMjk2MDA4Mg@@._V1_SX300.jpg" alt="Terminator 2: Judgment Day poster">
+                    </div>
+                    <div class="col-md-4">
+                        <p>
+                        <strong>Year: </strong>1991
+                        <strong>Rating: </strong>R
+                        <strong>Released: </strong>03 Jul 1991
+                        <strong>Runtime: </strong>137 min
+                        <strong>Genre: </strong>Action, Sci-Fi
+                        <strong>Director: </strong>James Cameron
+                        <strong>Writer: </strong>James Cameron, William Wisher Jr.
+                        <strong>Cast: </strong>Arnold Schwarzenegger, Linda Hamilton, Edward Furlong, Robert Patrick
+                        <strong>Plot: </strong>A cyborg, identical to the one who failed to kill Sarah Connor, must now protect her young son, John Connor, from a more advanced cyborg, made out of liquid metal.
+                        <strong>Language: </strong>English, Spanish
+                        <strong>Country: </strong>USA, France
+                        <strong>Awards: </strong>Won 4 Oscars. Another 20 wins & 22 nominations.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Movie Info Modal -->
+    <div class="modal container" id="movieInfo_Minions">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="movieInfo" id="movie_info_title">Minions</h4>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-md-4">
+                        <img class="img-responsive poster-image" src="http://ia.media-imdb.com/images/M/MV5BMTg2MTMyMzU0M15BMl5BanBnXkFtZTgwOTU3ODk4NTE@._V1_SX300.jpg" alt="Minions poster">
+                    </div>
+                    <div class="col-md-4">
+                        <p>
+                        <strong>Year: </strong>2015
+                        <strong>Rating: </strong>PG
+                        <strong>Released: </strong>10 Jul 2015
+                        <strong>Runtime: </strong>91 min
+                        <strong>Genre: </strong>Animation, Comedy, Family
+                        <strong>Director: </strong>Kyle Balda, Pierre Coffin
+                        <strong>Writer: </strong>Brian Lynch
+                        <strong>Cast: </strong>Sandra Bullock, Jon Hamm, Michael Keaton, Allison Janney
+                        <strong>Plot: </strong>Minions Stuart, Kevin and Bob are recruited by Scarlet Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world.
+                        <strong>Language: </strong>English
+                        <strong>Country: </strong>USA
+                        <strong>Awards: </strong>N/A
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Movie Info Modal -->
+    <div class="modal container" id="movieInfo_Predator">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="movieInfo" id="movie_info_title">Predator</h4>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-md-4">
+                        <img class="img-responsive poster-image" src="http://ia.media-imdb.com/images/M/MV5BMTI2ODMzODA0Ml5BMl5BanBnXkFtZTYwNTM3NzY5._V1._CR17,27,308,447_SY132_CR1,0,89,132_AL_.jpg_V1_SX300.jpg" alt="Predator poster">
+                    </div>
+                    <div class="col-md-4">
+                        <p>
+                        <strong>Year: </strong>1987
+                        <strong>Rating: </strong>R
+                        <strong>Released: </strong>12 Jun 1987
+                        <strong>Runtime: </strong>107 min
+                        <strong>Genre: </strong>Action, Horror, Sci-Fi
+                        <strong>Director: </strong>John McTiernan
+                        <strong>Writer: </strong>Jim Thomas, John Thomas
+                        <strong>Cast: </strong>Arnold Schwarzenegger, Carl Weathers, Elpidia Carrillo, Bill Duke
+                        <strong>Plot: </strong>A team of commandos on a mission in a Central American jungle find themselves hunted by an extra-terrestrial warrior.
+                        <strong>Language: </strong>English, Spanish
+                        <strong>Country: </strong>USA
+                        <strong>Awards: </strong>Nominated for 1 Oscar. Another 3 wins & 4 nominations.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Page Content -->
+    <nav>
+        <div class="container-fluid">
+            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Trailer Park Movie Trailers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container-fluid row">
+            <!-- Variable for each tile to be added to the site -->
+            <div class="col-md-3 movie-tile text-center">
+    <img class="img-responsive poster-image" src="http://ia.media-imdb.com/images/M/MV5BMTgwMjI4MzU5N15BMl5BanBnXkFtZTcwMTMyNTk3OA@@._V1_SX300.jpg" alt="Toy Story poster"data-trailer-youtube-id="KYz2wyBy3kc" data-toggle="modal" data-target="#trailer">
+    <a href="#"  data-toggle="modal" data-target="#movieInfo_Toy Story"><h2>Toy Story</h2></a>
+</div><div class="col-md-3 movie-tile text-center">
+    <img class="img-responsive poster-image" src="http://ia.media-imdb.com/images/M/MV5BMTg5NzUwMDU5NF5BMl5BanBnXkFtZTcwMjk2MDA4Mg@@._V1_SX300.jpg" alt="Terminator 2: Judgment Day poster"data-trailer-youtube-id="eajuMYNYtuY" data-toggle="modal" data-target="#trailer">
+    <a href="#"  data-toggle="modal" data-target="#movieInfo_Terminator 2: Judgment Day"><h2>Terminator 2: Judgment Day</h2></a>
+</div><div class="col-md-3 movie-tile text-center">
+    <img class="img-responsive poster-image" src="http://ia.media-imdb.com/images/M/MV5BMTg2MTMyMzU0M15BMl5BanBnXkFtZTgwOTU3ODk4NTE@._V1_SX300.jpg" alt="Minions poster"data-trailer-youtube-id="eisKxhjBnZ0" data-toggle="modal" data-target="#trailer">
+    <a href="#"  data-toggle="modal" data-target="#movieInfo_Minions"><h2>Minions</h2></a>
+</div><div class="col-md-3 movie-tile text-center">
+    <img class="img-responsive poster-image" src="http://ia.media-imdb.com/images/M/MV5BMTI2ODMzODA0Ml5BMl5BanBnXkFtZTYwNTM3NzY5._V1._CR17,27,308,447_SY132_CR1,0,89,132_AL_.jpg_V1_SX300.jpg" alt="Predator poster"data-trailer-youtube-id="Y1txEAywdiw" data-toggle="modal" data-target="#trailer">
+    <a href="#"  data-toggle="modal" data-target="#movieInfo_Predator"><h2>Predator</h2></a>
+</div>
+        </div>
+    </main>
+</body>
+
+</html>

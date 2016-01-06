@@ -1,32 +1,35 @@
 
     <!-- Movie Info Modal -->
-    <div class="modal" id="movieInfo_{movie_title}">
+    <div class="modal container" id="movieInfo_{movie_title}">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="movieInfo" id="movie_info_title">{movie_title}</h4>
                 </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="{poster_image_url}" alt="{movie_title} poster">
-                    <ul class="flex-box">
-                        <li class="flex-item"><strong>Year: </strong>{movie_year}</li>
-                        <li class="flex-item"><strong>Rating: </strong>{movie_rating}</li>
-                        <li class="flex-item"><strong>Released: </strong>{movie_released}</li>
-                        <li class="flex-item"><strong>Runtime: </strong>{movie_runtime}</li>
-                        <li class="flex-item"><strong>Genre: </strong>{movie_genre}</li>
-                        <li class="flex-item"><strong>Director: </strong>{movie_director}</li>
-                        <li class="flex-item"><strong>Writer: </strong>{movie_writer}</li>
-                        <li class="flex-item"><strong>Cast: </strong>{movie_actors}</li>
-                        <li class="flex-item"><strong>Plot: </strong>{movie_plot}</li>
-                        <li class="flex-item"><strong>Language: </strong>{movie_language}</li>
-                        <li class="flex-item"><strong>Country: </strong>{movie_country}</li>
-                        <li class="flex-item"><strong>Awards: </strong>{movie_awards}</li>
-                    </ul>
+                <div class="modal-body row">
+                    <div class="col-md-4">
+                        <img class="img-responsive poster-image" src="{poster_image_url}" alt="{movie_title} poster">
+                    </div>
+                    <div class="col-md-4">
+                        <p>
+                        <strong>Year: </strong>{movie_year}
+                        <strong>Rating: </strong>{movie_rating}
+                        <strong>Released: </strong>{movie_released}
+                        <strong>Runtime: </strong>{movie_runtime}
+                        <strong>Genre: </strong>{movie_genre}
+                        <strong>Director: </strong>{movie_director}
+                        <strong>Writer: </strong>{movie_writer}
+                        <strong>Cast: </strong>{movie_actors}
+                        <strong>Plot: </strong>{movie_plot}
+                        <strong>Language: </strong>{movie_language}
+                        <strong>Country: </strong>{movie_country}
+                        <strong>Awards: </strong>{movie_awards}
+                        </p>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
-
             </div>
         </div>
     </div>

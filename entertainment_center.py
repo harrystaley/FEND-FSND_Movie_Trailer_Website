@@ -53,7 +53,7 @@ minions = media.Movie(
     "USA",
     "N/A",
     "http://ia.media-imdb.com/images/M/MV5BMTg2MTMyMzU0M15BMl5BanBnXkFtZTgwOTU3ODk4NTE@._V1_SX300.jpg",
-    "https://www.youtube.com/watch?v=dVDk7PXNXB8"    )
+    "https://www.youtube.com/watch?v=eisKxhjBnZ0")
 
 predator = media.Movie(
     "Predator",

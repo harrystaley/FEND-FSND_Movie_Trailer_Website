@@ -47,6 +47,7 @@ def create_info_modals_content(movies):
     for movie in movies:
         # Append the modal for the movie with its content filled in
         modalContent += info_modal_content.format(
+            movie_title=movie.title,
             movie_year=movie.year,
             movie_rating=movie.rating,
             movie_released=movie.released,
@@ -58,7 +59,8 @@ def create_info_modals_content(movies):
             movie_plot=movie.plot,
             movie_language=movie.language,
             movie_country=movie.country,
-            movie_awards=movie.awards
+            movie_awards=movie.awards,
+            poster_image_url=movie.poster_image_url
         )
     return modalContent
 
@@ -67,12 +69,9 @@ def open_movies_page(movies):
     # Create or overwrite the output file
     output_file = open('fresh_tomatoes.html', 'w')
 
-    # Replace the movie tiles placeholder generated content
+    # Replace the movie tiles and movie modals placeholders generated content
     rendered_content = main_page_content.format(
-        movie_tiles=create_movie_tiles_content(movies))
-
-    # Replace the placeholder genrated content
-    rendered_content = rendered_content.format(
+        movie_tiles=create_movie_tiles_content(movies),
         movie_modals=create_info_modals_content(movies))
 
     # Output the file
