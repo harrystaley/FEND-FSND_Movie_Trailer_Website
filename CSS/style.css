@@ -1,12 +1,34 @@
+/*
+Moved CSS from entertainment_center.py
+to its own file to follow css best practices
+*/
+
 body {
     padding-top: 80px;
 }
 
+ul {
+    list-style: none;
+}
+
 #trailer,
-.modal-dialog {
+.movie_modal {
     margin-top: 200px;
     width: 640px;
     height: 480px;
+}
+
+.movie-tile-info {
+    text-align: left;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .hanging-close {
@@ -22,8 +44,8 @@ body {
 }
 
 .poster-image {
-    width: 300px;
-    height: 400px;
+    width: 220px;
+    height: 324px;
 }
 
 .movie-tile {
@@ -31,9 +53,10 @@ body {
     padding-top: 20px;
 }
 
-.movie-tile:hover {
-    background-color: #EEE;
+.movie-tile:hover .movie-tile-info{
     cursor: pointer;
+    visibility: visible;
+    opacity: 1;
 }
 
 .scale-media {

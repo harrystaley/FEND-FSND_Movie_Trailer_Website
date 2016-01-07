@@ -1,10 +1,10 @@
-﻿# imports of other python files
+﻿''' This contains the individual data for each movie. '''
 import fresh_tomatoes
 import media
 
 # varialbes for each movie in my media library
 
-toy_story = media.Movie(
+TOY_STORY = media.Movie(
     "Toy Story",
     "1995",
     "G",
@@ -21,7 +21,7 @@ toy_story = media.Movie(
     "http://ia.media-imdb.com/images/M/MV5BMTgwMjI4MzU5N15BMl5BanBnXkFtZTcwMTMyNTk3OA@@._V1_SX300.jpg",
     "https://www.youtube.com/watch?v=KYz2wyBy3kc")
 
-terminator2 = media.Movie(
+TERMINATOR2 = media.Movie(
     "Terminator 2: Judgment Day",
     "1991",
     "R",
@@ -38,7 +38,7 @@ terminator2 = media.Movie(
     "http://ia.media-imdb.com/images/M/MV5BMTg5NzUwMDU5NF5BMl5BanBnXkFtZTcwMjk2MDA4Mg@@._V1_SX300.jpg",
     "https://www.youtube.com/watch?v=eajuMYNYtuY")
 
-minions = media.Movie(
+MINIONS = media.Movie(
     "Minions",
     "2015",
     "PG",
@@ -55,7 +55,7 @@ minions = media.Movie(
     "http://ia.media-imdb.com/images/M/MV5BMTg2MTMyMzU0M15BMl5BanBnXkFtZTgwOTU3ODk4NTE@._V1_SX300.jpg",
     "https://www.youtube.com/watch?v=eisKxhjBnZ0")
 
-predator = media.Movie(
+PREDATOR = media.Movie(
     "Predator",
     "1987",
     "R",
@@ -65,7 +65,7 @@ predator = media.Movie(
     "John McTiernan",
     "Jim Thomas, John Thomas",
     "Arnold Schwarzenegger, Carl Weathers, Elpidia Carrillo, Bill Duke",
-    "A team of commandos on a mission in a Central American jungle find themselves hunted by an extra-terrestrial warrior.",
+    "A team of commandos on a mission in a Central American jungle find themselves hunted by an extra-terrestrial warrior.",
     "English, Spanish",
     "USA",
     "Nominated for 1 Oscar. Another 3 wins & 4 nominations.",
@@ -73,5 +73,5 @@ predator = media.Movie(
     "https://www.youtube.com/watch?v=Y1txEAywdiw")
 
 # call each movie in my entire catalog and then build the website
-movies = [toy_story, terminator2, minions, predator]
-fresh_tomatoes.open_movies_page(movies)
+MOVIES = [TOY_STORY, TERMINATOR2, MINIONS, PREDATOR]
+fresh_tomatoes.open_movies_page(MOVIES)

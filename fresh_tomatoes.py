@@ -1,6 +1,9 @@
+''' This module merges several HTML files to create a dynamic webpage. '''
+
 import webbrowser
 import os
 import re
+
 
 def parse_html(html):
     """ returns html string from `HTML/_<template>.html` """
@@ -8,21 +11,22 @@ def parse_html(html):
                                         'r').readlines()])
 
 # load the styles and scripting for the page
-main_page_head = parse_html('head')
+MAIN_PAGE_HEAD = parse_html('head')
 
 # Load the main page layout and title bar
-main_page_content = parse_html('main')
+MAIN_PAGE_CONTENT = parse_html('main')
 
 # load a single movie entry html template
-movie_tile_content = parse_html('tile')
+MOVIE_TILE_CONTENT = parse_html('tile')
 
 # load a single modal movie entry html template
-info_modal_content = parse_html('infoModal')
+INFO_MODAL_CONTENT = parse_html('infoModal')
+
 
 def create_movie_tiles_content(movies):
     '''Creates a tile to be displayed for each movie on the webpage.'''
     # The HTML content for this section of the page
-    tileContent = ''
+    merged_tile_content = ''
     for movie in movies:
         # Extract the youtube ID from the url
         youtube_id_match = re.search(
@@ -33,20 +37,7 @@ def create_movie_tiles_content(movies):
                               else None)
 
         # Append the tile for the movie with its content filled in
-        tileContent += movie_tile_content.format(
-            movie_title=movie.title,
-            poster_image_url=movie.poster_image_url,
-            trailer_youtube_id=trailer_youtube_id
-        )
-    return tileContent
-
-def create_info_modals_content(movies):
-    '''Creates a modal for the pertinant movie info for each movie.'''
-    # The HTML content for this section of the page
-    modalContent = ''
-    for movie in movies:
-        # Append the modal for the movie with its content filled in
-        modalContent += info_modal_content.format(
+        merged_tile_content += MOVIE_TILE_CONTENT.format(
             movie_title=movie.title,
             movie_year=movie.year,
             movie_rating=movie.rating,
@@ -60,9 +51,11 @@ def create_info_modals_content(movies):
             movie_language=movie.language,
             movie_country=movie.country,
             movie_awards=movie.awards,
-            poster_image_url=movie.poster_image_url
+            poster_image_url=movie.poster_image_url,
+            trailer_youtube_id=trailer_youtube_id
         )
-    return modalContent
+    return merged_tile_content
+
 
 def open_movies_page(movies):
     '''Function that creates a movies file and appends rendered HTML to it.'''
@@ -70,12 +63,15 @@ def open_movies_page(movies):
     output_file = open('fresh_tomatoes.html', 'w')
 
     # Replace the movie tiles and movie modals placeholders generated content
-    rendered_content = main_page_content.format(
-        movie_tiles=create_movie_tiles_content(movies),
-        movie_modals=create_info_modals_content(movies))
+    rendered_content = MAIN_PAGE_HEAD + MAIN_PAGE_CONTENT.format(
+        movie_tiles=create_movie_tiles_content(movies))
+
+    # clean up html where it is inserting non breaking space
+    rendered_content = unicode(rendered_content, "UTF-8")
+    rendered_content = rendered_content.replace(u"\u00A0", " ")
 
     # Output the file
-    output_file.write(main_page_head + rendered_content)
+    output_file.write(rendered_content)
     output_file.close()
 
     # open the output file in the browser (in a new tab, if possible)

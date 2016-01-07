@@ -22,6 +22,7 @@
 4. The website is now open
 	- Click on any movie poster to display the movie
 	- Once the trailer is playing click on the X in the upper right hand corner to close.
+	- hover over the movie poster to get more information about the movie such as release date, plot, ect.
 	- The code has created an additional file titled fresh_tomatoes.html.
 	- Every time you run entertainment_center.py it will regenerate fresh_tomatoes.html.
 

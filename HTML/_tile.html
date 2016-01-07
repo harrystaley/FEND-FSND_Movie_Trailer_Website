@@ -1,4 +1,21 @@
-<div class="col-md-3 movie-tile text-center">
-    <img class="img-responsive poster-image" src="{poster_image_url}" alt="{movie_title} poster"data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-    <a href="#"  data-toggle="modal" data-target="#movieInfo_{movie_title}"><h2>{movie_title}</h2></a>
-</div>
+    <div class="col-md-6 col-lg-4 movie-tile text-center" data-toggle="modal" data-target="#trailer"  data-trailer-youtube-id="{trailer_youtube_id}">
+        <img src="{poster_image_url}" class="poster-image" alt="{movie_title} poster image">
+        <h5>{movie_title} ({movie_year})</h5>
+        <div class="movie-tile-info">
+
+            <ul class="flex-box">
+                <li class="flex-item"><strong>Rating: </strong>{movie_rating}</li>
+                <li class="flex-item"><strong>Released: </strong>{movie_released}</li>
+                <li class="flex-item"><strong>Runtime: </strong>{movie_runtime}</li>
+                <li class="flex-item"><strong>Genre: </strong>{movie_genre}</li>
+                <li class="flex-item"><strong>Director: </strong>{movie_director}</li>
+                <li class="flex-item"><strong>Writer: </strong>{movie_writer}</li>
+                <li class="flex-item"><strong>Cast: </strong>{movie_actors}</li>
+                <li class="flex-item"><strong>Plot: </strong>{movie_plot}</li>
+                <li class="flex-item"><strong>Language: </strong>{movie_language}</li>
+                <li class="flex-item"><strong>Country: </strong>{movie_country}</li>
+                <li class="flex-item"><strong>Awards: </strong>{movie_awards}</li>
+            </ul>
+
+        </div>
+    </div>

@@ -1,13 +1,13 @@
-# function imports
-import webbrowser
+''' Defines main classes for the project '''
+
 
 class Movie():
-    '''Defines a class to store information about a movie such as valid ratings and other pertinant data such as title.'''
-
-    VALID_RATINGS = ["G", "PG", "PG-13", "R", "NC-17", "NR"]
+    '''Defines a class to store information about a movie such
+    as valid ratings and other pertinant data such as title.'''
 
     def __init__(self, movie_title, movie_year, movie_rating, movie_released, movie_runtime, movie_genre, movie_director, movie_writer, movie_actors, movie_plot, movie_language, movie_country, movie_awards, poster_image, trailer_youtube):
-        '''Defines the definition for the class and all of the pertinant data elements of the class'''
+        '''Defines the definition for the class and all of the
+        pertinant data elements of the class'''
         self.title = movie_title
         self.year = movie_year
         self.rating = movie_rating

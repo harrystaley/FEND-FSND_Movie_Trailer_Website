@@ -1,17 +1,13 @@
 
     <!-- Movie Info Modal -->
-    <div class="modal container" id="movieInfo_{movie_title}">
+    <div class="modal container info_modal" id="movieInfo_{movie_title}">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="movieInfo" id="movie_info_title">{movie_title}</h4>
                 </div>
-                <div class="modal-body row">
-                    <div class="col-md-4">
-                        <img class="img-responsive poster-image" src="{poster_image_url}" alt="{movie_title} poster">
-                    </div>
-                    <div class="col-md-4">
-                        <p>
+                    <div class="modal-body">
+                        <img class="poster-image" src="{poster_image_url}" alt="{movie_title} poster">
                         <strong>Year: </strong>{movie_year}
                         <strong>Rating: </strong>{movie_rating}
                         <strong>Released: </strong>{movie_released}
@@ -24,7 +20,6 @@
                         <strong>Language: </strong>{movie_language}
                         <strong>Country: </strong>{movie_country}
                         <strong>Awards: </strong>{movie_awards}
-                        </p>
                     </div>
                 </div>
                 <div class="modal-footer">
