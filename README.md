@@ -1,14 +1,49 @@
-# Udacity Front End Web Developer Nanodegree
+# Udacity Front End and Full Stack Web Developer Nanodegrees
 ## Project 1: Movie Trailer Website
 
-## Set up your Python Enviorment
+### PROJECT SPECIFICATIONS
+as of July 2016
+
+Functionality
+
+| CRITERIA                                                           | MEETS SPECIFICATIONS                                                        |
+|--------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| Is the page dynamically generated from a Python data structure?    | Page is dynamically generated from a Python data structure.                 |
+| Does the page present the required content (title, art, and link)? | Page does present required content (movie title, box art and trailer link). |
+| Is the page error free?                                            | Page is error free.                                                         |
+
+Code Quality
+
+| CRITERIA                                                    | MEETS SPECIFICATIONS                                    |
+|-------------------------------------------------------------|---------------------------------------------------------|
+| Is the code ready for personal review and neatly formatted? | Code is ready for personal review and neatly formatted. |
+
+Comments
+
+| CRITERIA                                                         | MEETS SPECIFICATIONS                                 |
+|------------------------------------------------------------------|------------------------------------------------------|
+| Are comments effectively used to explain longer code procedures? | Comments effectively explain longer code procedures. |
+
+Documentation
+
+| CRITERIA                                                                                               | MEETS SPECIFICATIONS                                                                          |
+|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| Is there a README file that include details of all steps required to successfully run the application? | A README file includes details of all the steps required to successfully run the application. |
+
+OPTIONAL OBJECTIVES
+still to complete as of July 2016
+TODO: Use an API to supply movie data.
+
+## RUNNING MY PROJECT
+
+### Set up your Python Enviorment
 
 1. Navigate to [Downloads at Python.org](https://www.python.org/downloads/) select the downloads button and pick your appropriate operating system.
 2. once installed start IDLE
   - For WIndows navigate to the Python 2.7 folder.
   - For Mac type IDLE in the spotlight search.
 
-## How to create the website using python
+### How to create the website using python
 
 1. Download the github repository.
 2. Start IDLE.
