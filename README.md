@@ -31,7 +31,9 @@ Documentation
 | Is there a README file that include details of all steps required to successfully run the application? | A README file includes details of all the steps required to successfully run the application. |
 
 OPTIONAL OBJECTIVES
+
 still to complete as of July 2016
+
 TODO: Use an API to supply movie data.
 
 ## RUNNING MY PROJECT
