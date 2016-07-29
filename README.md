@@ -1,5 +1,5 @@
 # Udacity Front End and Full Stack Web Developer Nanodegrees
-## Project 1: Movie Trailer Website
+## Project: Movie Trailer Website
 
 ### PROJECT SPECIFICATIONS
 as of July 2016
