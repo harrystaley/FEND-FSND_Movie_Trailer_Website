@@ -1,45 +1,49 @@
 # FEND-FSND_Movie_Trailer_Website
 
 ## Project Overview
+The FEND-FSND Movie Trailer Website project is a part of the Udacity Front End and Full Stack Web Developer Nanodegrees. The goal of this project is to create a dynamic website that displays a list of movies and their trailers. This website is built using Python to generate HTML for the website, styled with CSS.
 
-This repository contains the code for a dynamic movie trailer website, which is a project part of the Udacity Front End and Full Stack Web Developer Nanodegree programs. The website is built using Python, HTML, and CSS, showcasing the ability to generate web pages using structured data. The project is designed to meet specific educational criteria in terms of code quality and functionality.
+The project is structured as follows:
+- `entertainment_center.py`: Main Python script that you will run to generate the website. It creates a list of movie instances and calls the method to generate the HTML file.
+- `media.py`: Contains the class Movie that stores details of a movie.
+- `fresh_tomatoes.py`: Contains the open_movies_page function that takes in a list of movies and generates an HTML file including this data, facilitating the website's layout and design.
 
-## Setup or Installation Instructions
-
+## Setup and Installation
 ### Prerequisites
-
-- Python 3.x
-- A web browser (Chrome, Firefox, Safari, etc.)
+- Python (version 3.x is recommended)
+- A web browser
 
 ### Installation
+1. Clone the repository or download the ZIP file of the project.
+   ```bash
+   git clone https://github.com/yourusername/FEND-FSND_Movie_Trailer_Website.git
+   ```
+2. Navigate to the project directory.
+   ```bash
+   cd FEND-FSND_Movie_Trailer_Website
+   ```
 
-1. Clone this repository to your local machine using `https://github.com/<Your Username>/FEND-FSND_Movie_Trailer_Website.git`
-
-2. Navigate to the project directory `cd FEND-FSND_Movie_Trailer_Website`
-
-3. Run the `entertainment_center.py` file in your Python environment to generate and open the website in your default browser.
+### Running the Application
+To run the application and generate the website, execute the following command in the project directory:
+```bash
+python entertainment_center.py
+```
+This will open a web page in your default browser displaying the movie trailers website.
 
 ## Usage Examples
+After running `entertainment_center.py`, a web page will be generated and displayed in your browser. This page will list several movies with movie poster images and titles. Clicking on a movie image will play its trailer.
 
-Once the website is generated and opened in your browser, you will see a list of movie posters. When you click on a movie poster, the trailer for that movie will play.
+## How to Contribute
+Contributions to the FEND-FSND_Movie_Trailer_Website are welcome. Here are ways you can contribute:
+- Reporting bugs
+- Suggesting enhancements
+- Submitting pull requests after forking this repository
 
-## Contribution Guidelines
-
-If you'd like to contribute to this project, please follow these steps:
-
-1. Fork the project.
-2. Create your feature branch: `git checkout -b feature/AmazingFeature`
-3. Commit your changes: `git commit -m 'Add some AmazingFeature'`
-4. Push to the branch: `git push origin feature/AmazingFeature`
-5. Open a Pull Request.
-
-Please ensure your pull request adheres to the following guidelines:
-
-- Write clear and concise commit messages.
-- Your code should pass any existing unit tests.
-- New features or updates should include new unit tests.
-- Changes should be consistent with the existing code style.
+Please use the issue tracker to report any bugs or file feature requests.
 
 ## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details. This license allows you to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+- The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+- The software is provided "as is", without warranty of any kind.
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+Enjoy building and customizing your movie trailer website!
