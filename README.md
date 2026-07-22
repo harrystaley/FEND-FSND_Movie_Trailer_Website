@@ -2,53 +2,55 @@
 
 ## Project Overview
 
-The **FEND-FSND_Movie_Trailer_Website** is a dynamic movie trailer website developed as part of the Udacity Front End and Full Stack Web Developer Nanodegree programs. This project demonstrates the ability to generate web pages from structured data using Python, HTML, and CSS. The website showcases a collection of movies, each with a trailer, leveraging educational criteria for code quality and functionality.
+The **FEND-FSND_Movie_Trailer_Website** is a dynamic web application that displays a collection of movie trailers. Developed using Python, HTML, and CSS, this project is part of the Udacity Front End and Full Stack Web Developer Nanodegree programs. It demonstrates the ability to generate web pages from structured data, adhering to specific educational criteria for code quality and functionality.
 
 ## Features
 
-- **Dynamic Content Generation**: Automatically generate an HTML page displaying a list of movies with their trailers, titles, and posters.
-- **Responsive Design**: Utilizes CSS for styling and layout to ensure a responsive design across different devices.
-- **Interactive Interface**: Users can click on movie posters to view the trailers in a modal window.
+- **Dynamic Content Generation**: Automatically generate a web page that displays a list of movies and their trailers.
+- **Responsive Design**: Uses HTML and CSS to create a visually appealing and responsive layout.
+- **Structured Data Handling**: Leverages Python to manage and organize movie data efficiently.
 
 ## Setup and Installation
 
-To set up and run this project on your local machine, follow these steps:
+To set up the project locally, follow these steps:
 
-1. **Clone the Repository**:
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/yourusername/FEND-FSND_Movie_Trailer_Website.git
+   ```
+
+2. **Navigate into the project directory**:
+   ```bash
    cd FEND-FSND_Movie_Trailer_Website
    ```
 
-2. **Ensure Python is Installed**:
-   Ensure you have Python 3.x installed on your machine. You can download it from [python.org](https://www.python.org/).
+3. **Ensure Python is installed**:
+   This project requires Python 3. Make sure it's installed on your system.
 
-3. **Run the Script**:
-   Execute the Python script to generate the website:
+4. **Run the application**:
+   Execute the Python script to generate the movie trailer website:
    ```bash
    python entertainment_center.py
    ```
 
-4. **View the Website**:
-   Open the generated `fresh_tomatoes.html` file in your web browser to view the website.
-
 ## Usage
 
-Run the `entertainment_center.py` script to generate and view the movie trailer website. You can add more movies by modifying the `entertainment_center.py` file with additional movie entries.
+- **Viewing the Website**: After running the script, open the generated `fresh_tomatoes.html` file in your web browser to view the movie trailer website.
+- **Adding New Movies**: To add new movies, edit the `entertainment_center.py` file and include new instances of the `Movie` class with appropriate details.
 
 ## Contribution Guidelines
 
-We welcome contributions to enhance the functionality and design of the project. To contribute:
+Contributions to this project are welcome. To contribute:
 
-- Fork the repository.
-- Create a new branch for your feature or bugfix.
-- Commit your changes and push to your fork.
-- Submit a pull request with a detailed description of your changes.
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and ensure they are well-tested.
+4. Submit a pull request with a detailed description of the changes.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ---
 
-Feel free to reach out with any questions or feedback regarding the project. Happy coding!
+This README provides a concise and informative overview of the **FEND-FSND_Movie_Trailer_Website** project, including setup instructions and contribution guidelines. Enjoy exploring and building upon this project!
