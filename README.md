@@ -1,56 +1,45 @@
-# FEND-FSND_Movie_Trailer_Website
+```markdown
+# FEND-FSND Movie Trailer Website
 
-## Project Overview
-
-The **FEND-FSND_Movie_Trailer_Website** is a dynamic web application that displays a collection of movie trailers. Developed using Python, HTML, and CSS, this project is part of the Udacity Front End and Full Stack Web Developer Nanodegree programs. It demonstrates the ability to generate web pages from structured data, adhering to specific educational criteria for code quality and functionality.
+## Overview
+The **FEND-FSND Movie Trailer Website** is a dynamic web application that showcases a collection of movie trailers. Built using Python, HTML, and CSS, this project is part of Udacity's Front End and Full Stack Nanodegree programs. The app provides an engaging user interface where users can explore and watch trailers of various movies.
 
 ## Features
+- **Dynamic Content**: Movie details and trailers are dynamically rendered using Python.
+- **Responsive Design**: Utilizes HTML and CSS to ensure a seamless experience across different devices and screen sizes.
+- **Interactive UI**: Users can click on movie posters to view trailers in a modal window.
 
-- **Dynamic Content Generation**: Automatically generate a web page that displays a list of movies and their trailers.
-- **Responsive Design**: Uses HTML and CSS to create a visually appealing and responsive layout.
-- **Structured Data Handling**: Leverages Python to manage and organize movie data efficiently.
-
-## Setup and Installation
+## Installation
 
 To set up the project locally, follow these steps:
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/FEND-FSND_Movie_Trailer_Website.git
-   ```
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/your-username/FEND-FSND_Movie_Trailer_Website.git
+    cd FEND-FSND_Movie_Trailer_Website
+    ```
 
-2. **Navigate into the project directory**:
-   ```bash
-   cd FEND-FSND_Movie_Trailer_Website
-   ```
+2. **Ensure Python is Installed**:
+    - This project requires Python 3.6 or higher. You can download it from [Python's official website](https://www.python.org/downloads/).
 
-3. **Ensure Python is installed**:
-   This project requires Python 3. Make sure it's installed on your system.
-
-4. **Run the application**:
-   Execute the Python script to generate the movie trailer website:
-   ```bash
-   python entertainment_center.py
-   ```
+3. **Run the Application**:
+    - Execute the Python script to generate and open the movie trailer website.
+    ```bash
+    python entertainment_center.py
+    ```
 
 ## Usage
-
-- **Viewing the Website**: After running the script, open the generated `fresh_tomatoes.html` file in your web browser to view the movie trailer website.
-- **Adding New Movies**: To add new movies, edit the `entertainment_center.py` file and include new instances of the `Movie` class with appropriate details.
+After setting up the project, you can run the application to view the movie trailer website. Click on any movie poster to watch its trailer. This application serves as a simple yet effective demonstration of integrating Python with web technologies to create dynamic content.
 
 ## Contribution Guidelines
-
-Contributions to this project are welcome. To contribute:
+Contributions are welcome! Please follow these steps to contribute:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
-3. Make your changes and ensure they are well-tested.
-4. Submit a pull request with a detailed description of the changes.
+3. Commit your changes with descriptive messages.
+4. Push your changes to the branch.
+5. Open a pull request with a detailed description of your changes.
 
 ## License
-
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
----
-
-This README provides a concise and informative overview of the **FEND-FSND_Movie_Trailer_Website** project, including setup instructions and contribution guidelines. Enjoy exploring and building upon this project!
+```
