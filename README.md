@@ -1,45 +1,54 @@
 ```markdown
-# FEND-FSND Movie Trailer Website
+# FEND-FSND_Movie_Trailer_Website
 
 ## Overview
-The **FEND-FSND Movie Trailer Website** is a dynamic web application that showcases a collection of movie trailers. Built using Python, HTML, and CSS, this project is part of Udacity's Front End and Full Stack Nanodegree programs. The app provides an engaging user interface where users can explore and watch trailers of various movies.
+
+FEND-FSND_Movie_Trailer_Website is a dynamic web application designed to showcase movie trailers using Python, HTML, and CSS. This project is part of Udacity's Full Stack Web Developer Nanodegree program. It features a responsive and interactive user interface, allowing users to explore various movie trailers seamlessly.
 
 ## Features
-- **Dynamic Content**: Movie details and trailers are dynamically rendered using Python.
-- **Responsive Design**: Utilizes HTML and CSS to ensure a seamless experience across different devices and screen sizes.
-- **Interactive UI**: Users can click on movie posters to view trailers in a modal window.
 
-## Installation
+- **Responsive Design**: The web app is designed to be fully responsive, ensuring an optimal viewing experience across devices.
+- **Interactive UI**: Users can interact with the interface to view movie details and watch trailers.
+- **Dynamic Content**: Movie details and trailers are dynamically loaded, enhancing user engagement.
 
-To set up the project locally, follow these steps:
+## Setup and Installation
+
+To set up the FEND-FSND_Movie_Trailer_Website locally, follow these steps:
 
 1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/your-username/FEND-FSND_Movie_Trailer_Website.git
-    cd FEND-FSND_Movie_Trailer_Website
-    ```
-
-2. **Ensure Python is Installed**:
-    - This project requires Python 3.6 or higher. You can download it from [Python's official website](https://www.python.org/downloads/).
-
+   ```bash
+   git clone https://github.com/your-username/FEND-FSND_Movie_Trailer_Website.git
+   ```
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd FEND-FSND_Movie_Trailer_Website
+   ```
 3. **Run the Application**:
-    - Execute the Python script to generate and open the movie trailer website.
-    ```bash
-    python entertainment_center.py
-    ```
+   Ensure you have Python installed, then execute:
+   ```bash
+   python entertainment_center.py
+   ```
+   This will generate an HTML file and open it in your default web browser.
 
 ## Usage
-After setting up the project, you can run the application to view the movie trailer website. Click on any movie poster to watch its trailer. This application serves as a simple yet effective demonstration of integrating Python with web technologies to create dynamic content.
+
+Once the application is running, you can:
+
+- Click on any movie poster to view its trailer.
+- Navigate through the list of available movies to explore different genres and titles.
 
 ## Contribution Guidelines
-Contributions are welcome! Please follow these steps to contribute:
+
+We welcome contributions to enhance the project. To contribute:
 
 1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Commit your changes with descriptive messages.
-4. Push your changes to the branch.
-5. Open a pull request with a detailed description of your changes.
+2. Create a new branch for your feature or bugfix.
+3. Commit your changes with clear, descriptive messages.
+4. Push your branch and open a Pull Request.
+
+Please ensure your contributions align with the project's coding style and include appropriate test coverage.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 ```
