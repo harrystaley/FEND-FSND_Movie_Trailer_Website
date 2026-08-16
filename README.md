@@ -1,57 +1,42 @@
+```markdown
 # FEND-FSND_Movie_Trailer_Website
 
-## Overview
-
-FEND-FSND_Movie_Trailer_Website is a dynamic web application designed to showcase movie trailers. This project is part of Udacity's Full Stack Web Developer Nanodegree program and utilizes Python for backend logic, along with HTML and CSS for the front-end design. The application allows users to browse a curated list of movies and watch their trailers directly through the web interface.
+A dynamic web application for browsing and viewing movie trailers, developed as part of Udacity's Full Stack Nanodegree. This project leverages Python, HTML, and CSS to deliver a clean and responsive user interface.
 
 ## Features
 
-- **Dynamic Content**: Movies and their details are dynamically generated using Python.
-- **Responsive Design**: The application is styled using CSS to ensure a seamless experience across various devices.
-- **Interactive Interface**: Users can click on movie posters to watch trailers.
+- **Dynamic Content Rendering**: The application dynamically generates web pages to display movie trailers using Python.
+- **Responsive Design**: Built with HTML and CSS to ensure compatibility across various devices and screen sizes.
+- **Interactive Interface**: Users can browse through a selection of movies and view their trailers seamlessly.
 
-## Setup and Installation
+## Installation
 
 To set up the project locally, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/FEND-FSND_Movie_Trailer_Website.git
+   git clone https://github.com/yourusername/FEND-FSND_Movie_Trailer_Website.git
    ```
 2. **Navigate to the Project Directory**:
    ```bash
    cd FEND-FSND_Movie_Trailer_Website
    ```
-3. **Ensure Python is Installed**:
-   Make sure you have Python 3.x installed. You can download it from [python.org](https://www.python.org/downloads/).
-
-4. **Run the Application**:
+3. **Run the Application**:
+   Ensure you have Python installed. Run the following command to start the application:
    ```bash
    python entertainment_center.py
    ```
-   This will generate an HTML file and automatically open it in your default web browser.
+   This will generate and open the `fresh_tomatoes.html` file in your default web browser.
 
-## Usage Examples
+## Usage
 
-Once the application is running, you can:
-
-- Browse the list of movies displayed on the main page.
-- Click on any movie poster to watch its trailer in a pop-up window.
+Upon launching the application, the main page will display a grid of movie posters. Click on any poster to view the corresponding movie trailer.
 
 ## Contribution Guidelines
 
-We welcome contributions to enhance the project! If you are interested in contributing, please follow these guidelines:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them with clear and descriptive messages.
-4. Push your changes to your fork.
-5. Submit a pull request describing your changes.
+Contributions are welcome! Please fork the repository and submit a pull request with your changes. Ensure your code follows the project's coding style and includes appropriate documentation.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
----
-
-Feel free to explore the code and suggest improvements. We hope you enjoy using the Movie Trailer Website!
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+```
